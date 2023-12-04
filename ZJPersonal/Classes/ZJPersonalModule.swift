@@ -7,6 +7,7 @@
 
 import ZJRouter
 import ZJRoutableTargets
+import ZJBase
 
 public struct ZJPersonalModule: ZJModule {
     
@@ -15,7 +16,11 @@ public struct ZJPersonalModule: ZJModule {
     public func initialize() {
         
         ZJPersonalRoutableTarget.register(path: ZJPersonalRoutePath.personal) { _ in
-            return ZJPersonalViewController()
+            return ZJNavigationController(rootViewController: ZJPersonalVC())
+        }
+        
+        ZJPersonalRoutableTarget.register(path: ZJPersonalRoutePath.test) { _ in
+            return ZJNavigationController(rootViewController: ZJTestVC())
         }
         
     }

@@ -1,0 +1,24 @@
+/* 
+  Locale.strings
+  Pods
+
+  Created by Jercan on 2023/11/30.
+  
+*/
+
+"main_item_rm" = "My RM";
+"main_item_performance" = "Customer Management";
+"main_item_chat" = "Contact Online";
+"main_item_setting" = "Settings";
+"main_welcome_title" = "Welcome to AsetKu";
+"main_welcome_desc" = "Login/Register to enjoy more privileges";
+"main_unlogin_btn_title" = "Login / Register";
+"main_coupon_unused" = "Coupon";
+"main_go_btn_title" = "GO";
+"main_coupon_title" = "Coupon";
+"main_invite_title" = "Invite Friends";
+"chat_toplevel_faq_prefix" = "Are you going to consult the following questions?\n";
+"chat_phone_call_title" = "Tips";
+"chat_phone_call_desc" = "Call AsetKu Official Hotline";
+"download_telegram" = "Please download Telegram first";
+"generating_certificate" = "Failed to generate Certificate. Please participate in the Program again";

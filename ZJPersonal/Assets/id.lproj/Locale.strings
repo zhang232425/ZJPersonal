@@ -1,0 +1,24 @@
+/* 
+  Locale.strings
+  Pods
+
+  Created by Jercan on 2023/11/30.
+  
+*/
+
+"main_item_rm" = "RM Saya";
+"main_item_performance" = "Manajemen Pelanggan";
+"main_item_chat" = "Kontak Online";
+"main_item_setting" = "Pengaturan";
+"main_welcome_title" = "Selamat Datang di AsetKu";
+"main_welcome_desc" = "Login/Daftar untuk nikmati keistimewaan lainnya";
+"main_unlogin_btn_title" = "Login / Daftar";
+"main_coupon_unused" = "Kupon";
+"main_go_btn_title" = "GO";
+"main_coupon_title" = "Kupon";
+"main_invite_title" = "Undang Teman";
+"chat_toplevel_faq_prefix" = "Permisi, pertanyaan yang ingin Anda konsultasikan adalah?\n";
+"chat_phone_call_title" = "Saran";
+"chat_phone_call_desc" = "Hubungi Hotline Resmi AsetKu";
+"download_telegram" = "Silakan download Telegram dahulu";
+"generating_certificate" = "Sertifikat gagal dibuat. Silakan berpartisipasi lagi dalam Program";
