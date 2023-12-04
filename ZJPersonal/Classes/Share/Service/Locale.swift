@@ -9,6 +9,10 @@ import ZJLocalizable
 
 enum Locale: String {
     
+    case requestTimeout
+    case requestFailed
+    case requestFailedPleaseRetry
+    
     case main_item_rm
     case main_item_performance
     case main_item_chat

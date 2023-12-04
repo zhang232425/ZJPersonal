@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwiftExt
+import RxSwift
 
 class ZJPersonalVC: BaseVC {
     
@@ -20,6 +21,7 @@ class ZJPersonalVC: BaseVC {
         super.viewDidLoad()
         setupViews()
         bindViewModel()
+        viewModel.initRequest()
     }
     
 }
@@ -41,7 +43,36 @@ private extension ZJPersonalVC {
     
     func bindViewModel() {
         
-        viewModel.isLoginState.subscribeNext(weak: scrollView, ZJPersonalScrollView.updateUI).disposed(by: disposeBag)
+        scrollView.rx.addRefreshHeader
+            .subscribeNext(weak: self, type(of: self).handlePull)
+            .disposed(by: disposeBag)
+        
+        viewModel.isLoginStateAction
+            .subscribeNext(weak: scrollView, ZJPersonalScrollView.updateUI)
+            .disposed(by: disposeBag)
+        
+        viewModel.sectionsAction
+            .subscribeNext(weak: scrollView, ZJPersonalScrollView.updateSections)
+            .disposed(by: disposeBag)
+        
+        viewModel.inviteCouponNoticeAction.elements
+            .subscribeNext(weak: scrollView, ZJPersonalScrollView.updateCouponNotice)
+            .disposed(by: disposeBag)
+        
+        Observable.merge(viewModel.inviteCouponNoticeAction.elements.map { _ in },
+                         viewModel.inviteCouponNoticeAction.errors.map { _ in })
+            .bind(to: scrollView.rx.endHeaderRefresh)
+            .disposed(by: disposeBag)
+        
+    }
+    
+}
+
+private extension ZJPersonalVC {
+    
+    func handlePull(_ : Void) {
+        
+        self.viewModel.requestDatas()
         
     }
     

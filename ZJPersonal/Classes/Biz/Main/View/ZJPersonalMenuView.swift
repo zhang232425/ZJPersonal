@@ -9,7 +9,6 @@ import UIKit
 
 class ZJPersonalMenuView: BaseView {
 
-    // SeparatorStackView
     private lazy var stackView = SeparatorStackView().then {
         $0.axis = .horizontal
         $0.spacing = 0
@@ -53,7 +52,13 @@ class ZJPersonalMenuView: BaseView {
 
 extension ZJPersonalMenuView {
     
-    
+    func updateInviteCouponNotice(_ text: String) {
+            
+        let itemView = stackView.arrangedSubviews.filter { ($0 as? ZJPersonalMenuItemView)?.item == .invite }.first
+        let label = (itemView as! ZJPersonalMenuItemView).valueLabel
+        label.text = text
+        
+    }
     
 }
 
@@ -92,7 +97,7 @@ fileprivate class ZJPersonalMenuItemView: BaseView {
         $0.numberOfLines = 0
     }
     
-    private lazy var valueLabel = UILabel().then {
+    private(set) lazy var valueLabel = UILabel().then {
         $0.textColor = UIColor(hexString: "FF7D0F")
         $0.font = .medium12
         $0.numberOfLines = 0

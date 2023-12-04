@@ -6,6 +6,10 @@
   
 */
 
+"requestTimeout" = "Request Timeout";
+"requestFailed" = "No signal yet";
+"requestFailedPleaseRetry" = "Request failed, please try again";
+
 "main_item_rm" = "My RM";
 "main_item_performance" = "Customer Management";
 "main_item_chat" = "Contact Online";

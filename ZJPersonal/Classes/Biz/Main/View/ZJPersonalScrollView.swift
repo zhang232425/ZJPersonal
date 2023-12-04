@@ -20,6 +20,8 @@ class ZJPersonalScrollView: UIScrollView {
     private(set) lazy var loginOutView = ZJPersonalLoginOutView()
     
     private(set) lazy var menuView = ZJPersonalMenuView()
+    
+    private(set) lazy var sectionsView = ZJPersonalSectionsView()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -44,6 +46,8 @@ private extension ZJPersonalScrollView {
         }
         
         stackView.addArrangedSubview(menuView)
+        
+        stackView.addArrangedSubview(sectionsView)
         
     }
     

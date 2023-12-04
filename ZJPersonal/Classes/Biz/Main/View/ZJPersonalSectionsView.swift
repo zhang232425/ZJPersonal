@@ -28,9 +28,24 @@ class ZJPersonalSectionsView: BaseView {
 
 extension ZJPersonalSectionsView {
     
-    func setSections(_ sections: [ZJPersonalSection]) {
+    func updateSections(_ sections: [ZJPersonalSection]) {
         
+        stackView.arrangedSubviews.forEach {
+            stackView.removeArrangedSubview($0)
+            $0.removeFromSuperview()
+        }
         
+        sections.forEach {
+            let view = ZJPersonalSectionItemView(section: $0)
+            view.label.text = $0.title
+            view.iconImageView.image = .named($0.imageName)
+            
+            stackView.addArrangedSubview(view)
+            view.snp.makeConstraints {
+                $0.left.right.equalToSuperview()
+                $0.height.equalTo(50.auto)
+            }
+        }
         
     }
     

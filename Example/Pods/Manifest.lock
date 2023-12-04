@@ -131,6 +131,7 @@ PODS:
     - ZJRequest
     - ZJRoutableTargets
     - ZJRouter
+    - ZJValidator
   - ZJRefresh (0.1.0):
     - ESPullToRefresh
   - ZJRegion (0.1.0)
@@ -301,7 +302,7 @@ SPEC CHECKSUMS:
   ZJLogin: 6d267f5fed163c78d2aa1772e271910bd0d9b7fd
   ZJLoginManager: c1e2c054e53bf8ce282c5519209c354ecf176ab9
   ZJModalTransition: e7db190e128cf9cf352d89b3418505ffd3096a46
-  ZJPersonal: 3014113b60caa65e6b8f29a96d4dc08bb628f0be
+  ZJPersonal: 3b0b6a53716cb9ee3f4379637ba0adc520a7445f
   ZJRefresh: 2ab367241aea892e43afa57498d07c47f4c38897
   ZJRegion: e077f30a1ebf32398f2e9af9380a7fe1ab4ffc61
   ZJRequest: cbca3f9b01504851babe3d409121abe1e9560f1b
