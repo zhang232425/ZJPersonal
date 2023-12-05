@@ -9,12 +9,6 @@ import UIKit
 
 class ZJUnreadMessageView: BaseView {
     
-    var count: Int = 0 {
-        didSet {
-            bageView.isHidden = (count <= 0)
-        }
-    }
-    
     private lazy var imageView = UIImageView().then {
         $0.image = .named("main_msg_icon")
     }
@@ -42,14 +36,27 @@ class ZJUnreadMessageView: BaseView {
         }
         
     }
-
+    
+    func setCount(_ count: Int) {
+        
+        bageView.isHidden = (count <= 0)
+        
+    }
+    
 }
 
 private extension ZJUnreadMessageView {
     
     @objc func readClick() {
         
-        print("响应者链 ===== \(#function)")
+        /**
+         这种方案不执行
+         */
+//        ZJPersonalClickEvent.messageIcon.post(by: self)
+        
+        if let view = UIApplication.shared.topViewController?.view {
+            ZJPersonalClickEvent.messageIcon.post(by: view)
+        }
         
     }
     

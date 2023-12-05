@@ -52,6 +52,18 @@ class ZJPersonalMenuView: BaseView {
 
 extension ZJPersonalMenuView {
     
+    func updateUnusedCoupon(count: Int) {
+        
+        let itemView = stackView.arrangedSubviews.filter{ ($0 as? ZJPersonalMenuItemView)?.item == .coupon }.first
+        let label = (itemView as! ZJPersonalMenuItemView).valueLabel
+        
+        var text = "\(count) " + Locale.main_coupon_unused.localized
+        if count > 1 {
+            text.append("s")
+        }
+        label.text = (count <= 0) ? nil : text
+    }
+    
     func updateInviteCouponNotice(_ text: String) {
             
         let itemView = stackView.arrangedSubviews.filter { ($0 as? ZJPersonalMenuItemView)?.item == .invite }.first
@@ -141,6 +153,13 @@ fileprivate class ZJPersonalMenuItemView: BaseView {
     }
     
     @objc func click() {
+        
+        switch item {
+        case .invite:
+            ZJPersonalClickEvent.inviteFriends.post(by: self)
+        case .coupon:
+            ZJPersonalClickEvent.couponList.post(by: self)
+        }
         
     }
     

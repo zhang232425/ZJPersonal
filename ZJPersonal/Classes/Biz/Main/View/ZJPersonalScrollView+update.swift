@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import ZJLoginManager
 
 extension ZJPersonalScrollView {
     
@@ -18,6 +19,23 @@ extension ZJPersonalScrollView {
     func updateCouponNotice(_ text: String) {
         
         menuView.updateInviteCouponNotice(text)
+        
+    }
+    
+    func updateProfile(_ profile: ZJUserProfile) {
+        
+        loginOnView.updateProfile(profile)
+        
+    }
+    
+    func updateUnusedCoupon(count: Int) {
+        
+        menuView.updateUnusedCoupon(count: count)
+    }
+    
+    func updateHasUnreadChatMsg(_ has: Bool) {
+        
+//        sectionsView.updateHasUnreadChatMsg(has)
         
     }
     

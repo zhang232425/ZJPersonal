@@ -14,10 +14,12 @@ class ZJPersonalScrollView: UIScrollView {
         $0.spacing = 0
         $0.distribution = .fill
         $0.alignment = .fill
-        $0.backgroundColor = .orange
+        $0.backgroundColor = .white
     }
     
     private(set) lazy var loginOutView = ZJPersonalLoginOutView()
+    
+    private(set) lazy var loginOnView = ZJPersonalLoginOnView()
     
     private(set) lazy var menuView = ZJPersonalMenuView()
     
@@ -59,10 +61,17 @@ extension ZJPersonalScrollView {
         
         if login {
             
-            stackView.insertArrangedSubview(loginOutView, at: 0)
+            [loginOutView, loginOnView].forEach {
+                stackView.removeArrangedSubview($0)
+                $0.removeFromSuperview()
+            }
+        
+            loginOnView = .init()
+            stackView.insertArrangedSubview(loginOnView, at: 0)
             
         } else {
             
+            loginOutView = .init()
             stackView.insertArrangedSubview(loginOutView, at: 0)
             
         }

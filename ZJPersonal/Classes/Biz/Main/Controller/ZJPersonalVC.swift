@@ -8,6 +8,7 @@
 import UIKit
 import RxSwiftExt
 import RxSwift
+import RxCocoa
 
 class ZJPersonalVC: BaseVC {
     
@@ -59,10 +60,63 @@ private extension ZJPersonalVC {
             .subscribeNext(weak: scrollView, ZJPersonalScrollView.updateCouponNotice)
             .disposed(by: disposeBag)
         
-        Observable.merge(viewModel.inviteCouponNoticeAction.elements.map { _ in },
-                         viewModel.inviteCouponNoticeAction.errors.map { _ in })
+        viewModel.profileAction.elements
+            .subscribeNext(weak: scrollView, ZJPersonalScrollView.updateProfile)
+            .disposed(by: disposeBag)
+        
+        if let data = viewModel.profileData {
+            scrollView.updateProfile(data)
+        }
+        
+        viewModel.profileRequestEnd
             .bind(to: scrollView.rx.endHeaderRefresh)
             .disposed(by: disposeBag)
+        
+        /**
+         viewModel.unreadMsgCount
+             .subscribeNext(weak: unreadMsgView, UnreadMsgIconView.setCount)
+             .disposed(by: disposeBag)
+         
+         viewModel.unUsedCouponCount
+             .subscribeNext(weak: scrollView, UserMainScrollView.setUnusedCoupon)
+             .disposed(by: disposeBag)
+         
+         viewModel.hasUnReadChatMsg.subscribe(onNext: { [weak self] in
+             self?.scrollView.setHasUnreadChatMsg($0)
+             self?.unReadChat = $0
+         }).disposed(by: disposeBag)
+         
+         if let tabBarItem = tabBarController?.tabBar.items?.last {
+             Observable.combineLatest(viewModel.isLoginState,
+                                      viewModel.unreadMsgCount,
+                                      viewModel.hasNewAppVersion)
+                 .map { $0 && ($1 > 0 || $2) }
+                 .bind(to: tabBarItem.rx.showCustomBadge)
+                 .disposed(by: disposeBag)
+         }
+         */
+        
+        viewModel.unreadMsgCountAction.elements
+            .subscribeNext(weak: unreadMessageView, ZJUnreadMessageView.setCount)
+            .disposed(by: disposeBag)
+                
+        viewModel.unUsedCouponsAction.elements
+            .subscribeNext(weak: scrollView, ZJPersonalScrollView.updateUnusedCoupon)
+            .disposed(by: disposeBag)
+        
+        viewModel.hasUnReadChatMsgAction.elements
+            .subscribeNext(weak: scrollView, ZJPersonalScrollView.updateHasUnreadChatMsg)
+            .disposed(by: disposeBag)
+        
+        if let tabBarItem = tabBarController?.tabBar.items?.last {
+            Observable.combineLatest(viewModel.isLoginStateAction,
+                                     viewModel.unreadMsgCountAction.elements)
+            .map { $0 && ($1 >= 0) }
+            .bind(to: tabBarItem.rx.showCustomBadge)
+            .disposed(by: disposeBag)
+        }
+        
+        
         
     }
     

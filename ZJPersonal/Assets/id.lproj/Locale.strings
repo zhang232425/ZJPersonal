@@ -10,6 +10,8 @@
 "requestFailed" = "Tidak Ada Sinyal";
 "requestFailedPleaseRetry" = "Permintaan gagal, Silakan coba lagi";
 
+"go" = "GO";
+
 "main_item_rm" = "RM Saya";
 "main_item_performance" = "Manajemen Pelanggan";
 "main_item_chat" = "Kontak Online";

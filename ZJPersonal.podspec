@@ -35,6 +35,7 @@ Pod::Spec.new do |s|
   s.dependency 'RxDataSources'
   s.dependency 'JXSegmentedView'
   s.dependency 'JXPagingView/Paging'
+  s.dependency 'ESTabBarController-swift'
   
   s.dependency 'ZJRequest'
   s.dependency 'ZJLocalizable'

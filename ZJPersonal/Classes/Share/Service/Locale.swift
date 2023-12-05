@@ -13,6 +13,8 @@ enum Locale: String {
     case requestFailed
     case requestFailedPleaseRetry
     
+    case go
+    
     case main_item_rm
     case main_item_performance
     case main_item_chat

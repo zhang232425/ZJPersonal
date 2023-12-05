@@ -16,11 +16,11 @@ public struct ZJPersonalModule: ZJModule {
     public func initialize() {
         
         ZJPersonalRoutableTarget.register(path: ZJPersonalRoutePath.personal) { _ in
-            return ZJNavigationController(rootViewController: ZJPersonalVC())
+            return ZJPersonalVC()
         }
         
         ZJPersonalRoutableTarget.register(path: ZJPersonalRoutePath.test) { _ in
-            return ZJNavigationController(rootViewController: ZJTestVC())
+            return ZJTestVC()
         }
         
     }

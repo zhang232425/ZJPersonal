@@ -19,6 +19,15 @@ enum API {
     /// 邀请好友的优惠券描述
     case inviteCouponNotice
     
+    /// 用户未读消息数
+    case unreadMessageCount
+    
+    /// 用户未使用的优惠券数
+    case unUsedCouponCount
+    
+    /// 查询用户IM信息
+    case userImInfo
+    
 }
 
 extension API: ZJRequestTargetType {
@@ -29,6 +38,12 @@ extension API: ZJRequestTargetType {
         switch self {
         case .inviteCouponNotice:
             return "/user/center/inviteCouponInfo"
+        case .unreadMessageCount:
+            return "/news/unread/cnt"
+        case .unUsedCouponCount:
+            return "/user/getCouponNewNum"
+        case .userImInfo:
+            return "/crm/im/user/imInfo"
         }
     }
     
@@ -36,12 +51,24 @@ extension API: ZJRequestTargetType {
         switch self {
         case .inviteCouponNotice:
             return .get
+        case .unreadMessageCount:
+            return .get
+        case .unUsedCouponCount:
+            return .get
+        case .userImInfo:
+            return .get
         }
     }
     
     var task: Task {
         switch self {
         case .inviteCouponNotice:
+            return .requestPlain
+        case .unreadMessageCount:
+            return .requestPlain
+        case .unUsedCouponCount:
+            return .requestPlain
+        case .userImInfo:
             return .requestPlain
         }
     }
@@ -53,4 +80,5 @@ extension API: ZJRequestTargetType {
     var sampleData: Data { .init() }
     
     var stubBehavior: StubBehavior { .never }
+    
 }

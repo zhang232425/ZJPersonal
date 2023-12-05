@@ -7,32 +7,36 @@
 //
 
 import UIKit
+import ZJBase
 import ZJRoutableTargets
 
-class ViewController: UIViewController {
+class ViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
-
-    
-    @IBAction func homeClick() {
+        var controllers = [UIViewController]()
         
         if let vc = ZJPersonalRoutableTarget.personal.viewController {
-            present(vc, animated: true)
+            
+            let personalVC = ZJNavigationController(rootViewController: vc)
+            personalVC.tabBarItem = .init(title: "Personal", image: UIImage(color: .blue, size: .init(width: 10, height: 10)), tag: 0)
+            controllers.append(personalVC)
+            
         }
         
-    }
-    
-    @IBAction func testClick() {
-        
-        if let vc = ZJPersonalRoutableTarget.test.viewController {
-            present(vc, animated: true)
+        if let vc = ZJLoginRoutableTarget.login.viewController {
+            
+            let loginVC = ZJNavigationController(rootViewController: vc)
+            loginVC.tabBarItem = .init(title: "Login", image: UIImage(color: .blue, size: .init(width: 10, height: 10)), tag: 0)
+            controllers.append(loginVC)
+            
         }
         
+        viewControllers = controllers
+        
     }
-    
+
 
 }
 

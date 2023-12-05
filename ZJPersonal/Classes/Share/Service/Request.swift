@@ -11,6 +11,7 @@ import Moya
 import SwiftyJSON
 import ZJValidator
 import ZJRequest
+import ZJLoginManager
 
 struct Request {}
 
@@ -55,6 +56,54 @@ extension Request.main {
             .asObservable()
         
     }
+
+    static func fetchUserProfile() -> Single<ZJUserProfile> {
+        
+        .create { single in
+            ZJLoginManager.shared.fetchUserProfile(success: {
+                if let m = $0 {
+                    single(.success(m))
+                } else {
+                    let domain = "ResponseErrorDomain"
+                    let userInfo = [NSLocalizedDescriptionKey: "profile is null"]
+                    let err = NSError(domain: domain, code: -1, userInfo: userInfo)
+                    single(.failure(err))
+                }
+            }, failure: {
+                single(.failure($0))
+            })
+            return Disposables.create()
+        }
+        
+    }
+    
+    static func getUnreadMessageCount() -> Single<Int> {
+        
+        API.unreadMessageCount.rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<Int>.self)
+            .map { $0.data ?? 0 }
+        
+    }
+
+    static func getUnreadCouponCount() -> Single<Int> {
+        
+        API.unUsedCouponCount.rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<[String: Int]>.self)
+            .map { $0.data?["newCouponNum"] ?? 0 }
+        
+    }
+
+    static func hasUnReadChatMessage() -> Single<Bool> {
+        
+        API.userImInfo.rx.request()
+            .ensureResponseStatus()
+            .mapObject(RootModel<[String: Any]>.self)
+            .map { ($0.data?["hasUnreadMsg"] as? Bool) ?? false }
+        
+    }
+    
     
 }
 

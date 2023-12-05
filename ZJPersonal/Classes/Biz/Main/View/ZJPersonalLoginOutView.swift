@@ -76,7 +76,7 @@ class ZJPersonalLoginOutView: BaseView {
 private extension ZJPersonalLoginOutView {
     
     @objc func buttonClick() {
-        print(#function)
+        ZJPersonalClickEvent.loginOrRegister.post(by: self)
     }
     
 }
