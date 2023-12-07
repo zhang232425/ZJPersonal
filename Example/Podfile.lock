@@ -125,6 +125,7 @@ PODS:
     - ZJBase
     - ZJCommonDefines
     - ZJCommonView
+    - ZJDevice
     - ZJExtension
     - ZJHUD
     - ZJLocalizable
@@ -160,6 +161,7 @@ DEPENDENCIES:
   - "ZJBase (from `git@github.com:zhang232425/ZJBase.git`, branch `main`)"
   - "ZJCommonDefines (from `git@github.com:zhang232425/ZJCommonDefines.git`, branch `main`)"
   - "ZJCommonView (from `git@github.com:zhang232425/ZJCommonView.git`, branch `main`)"
+  - "ZJDevice (from `git@github.com:zhang232425/ZJDevice.git`, branch `main`)"
   - "ZJExtension (from `git@github.com:zhang232425/ZJExtension.git`, branch `main`)"
   - "ZJLogin (from `git@github.com:zhang232425/ZJLogin.git`, branch `main`)"
   - "ZJLoginManager (from `git@github.com:zhang232425/ZJLoginManager.git`, branch `main`)"
@@ -171,7 +173,6 @@ DEPENDENCIES:
 SPEC REPOS:
   "git@github.com:zhang232425/ZJSpecs.git":
     - ZJActiveLabel
-    - ZJDevice
     - ZJHUD
     - ZJKeychain
     - ZJLocalAuth
@@ -217,6 +218,9 @@ EXTERNAL SOURCES:
   ZJCommonView:
     :branch: main
     :git: "git@github.com:zhang232425/ZJCommonView.git"
+  ZJDevice:
+    :branch: main
+    :git: "git@github.com:zhang232425/ZJDevice.git"
   ZJExtension:
     :branch: main
     :git: "git@github.com:zhang232425/ZJExtension.git"
@@ -248,6 +252,9 @@ CHECKOUT OPTIONS:
   ZJCommonView:
     :commit: 0b20bf4f5ebd405ef886b5b4e9356be478a1cd8f
     :git: "git@github.com:zhang232425/ZJCommonView.git"
+  ZJDevice:
+    :commit: fbaffb68104aa19e80659dbd6fbbdd51ac0a7b4c
+    :git: "git@github.com:zhang232425/ZJDevice.git"
   ZJExtension:
     :commit: 101fb483e31657f55915ae3dd874badf099a3670
     :git: "git@github.com:zhang232425/ZJExtension.git"
@@ -297,7 +304,7 @@ SPEC CHECKSUMS:
   ZJBase: 62bf80917d478c985f8ef76e2b25558820ea522b
   ZJCommonDefines: 9fd1e19aafb99bc9014e54e665520bb95aa5a22c
   ZJCommonView: e62b96fa97474a99971531e70e5e90c749d90629
-  ZJDevice: bfc36b209a264aa5b877a733c6a7cffa856038db
+  ZJDevice: 08a831f5d3382566e651c29b1fe7cd9ba6bfb851
   ZJExtension: 227faf8dfbd3562eaa7cd9120f41d44bf2b59258
   ZJHUD: d5ca2144a62af4331f7f58386f5e4fbc5f5b2d01
   ZJKeychain: 056dd2cf24a6d44cb41677290742fe46cac94d39
@@ -306,7 +313,7 @@ SPEC CHECKSUMS:
   ZJLogin: 6d267f5fed163c78d2aa1772e271910bd0d9b7fd
   ZJLoginManager: c1e2c054e53bf8ce282c5519209c354ecf176ab9
   ZJModalTransition: e7db190e128cf9cf352d89b3418505ffd3096a46
-  ZJPersonal: f248910e86e997bf4dd8d071d36139247f4f6cdc
+  ZJPersonal: 8e15e9beece1c31d85b3ab4100a51363c3b79a3a
   ZJRefresh: 2ab367241aea892e43afa57498d07c47f4c38897
   ZJRegion: e077f30a1ebf32398f2e9af9380a7fe1ab4ffc61
   ZJRequest: cbca3f9b01504851babe3d409121abe1e9560f1b
@@ -314,6 +321,6 @@ SPEC CHECKSUMS:
   ZJRouter: 2ae914db45b7844d11cb186d4de4dff75a5085b9
   ZJValidator: f1f4767a1a433ca41d2f33e0207172aa48afe58e
 
-PODFILE CHECKSUM: 29c194c661c8ac1b885eec35a36375ec271a90fc
+PODFILE CHECKSUM: b8a1659d0393169956ece1aa131c15b44b37c0d3
 
 COCOAPODS: 1.11.2

@@ -29,7 +29,7 @@ enum ZJPersonalClickEvent {
     
     /// 资助证书
     case sponsorCertificate
-    
+
 }
 
 extension ZJPersonalClickEvent: CommonResponderEvent {}

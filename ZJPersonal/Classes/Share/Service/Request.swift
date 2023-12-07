@@ -17,15 +17,17 @@ struct Request {}
 
 extension Request {
     
-    enum main {}
+    enum Main {}
+    
+    enum Setting {}
     
 }
 
-extension Request.main {
+extension Request.Main {
     
     static func inviteCouponNotice() -> Single<String> {
         
-        API.inviteCouponNotice.rx.request()
+        API.Main.inviteCouponNotice.rx.request()
             .mapObject(RootModel<[String: Any]>.self)
             .map { ($0.data?["couponDes"] as? String) ?? "" }
         
@@ -33,7 +35,7 @@ extension Request.main {
     
     static func inviteCouponNotice_() -> Single<String?> {
         
-        API.inviteCouponNotice.rx.request()
+        API.Main.inviteCouponNotice.rx.request()
             .mapObject(ZJRequestResult<[String: Any]>.self)
             .map { $0.data?["couponDes"] as? String }
         
@@ -41,7 +43,7 @@ extension Request.main {
     
     static func inviteCouponNotice__() -> Observable<String?> {
         
-        API.inviteCouponNotice.rx.request()
+        API.Main.inviteCouponNotice.rx.request()
             .mapObject(ZJRequestResult<[String: Any]>.self)
             .map { $0.data?["couponDes"] as? String }
             .asObservable()
@@ -50,7 +52,7 @@ extension Request.main {
     
     static func inviteCouponNotice___() -> Observable<String> {
         
-        API.inviteCouponNotice.rx.request()
+        API.Main.inviteCouponNotice.rx.request()
             .mapObject(ZJRequestResult<[String: Any]>.self)
             .map { ($0.data?["couponDes"] as? String) ?? "" }
             .asObservable()
@@ -79,7 +81,7 @@ extension Request.main {
     
     static func getUnreadMessageCount() -> Single<Int> {
         
-        API.unreadMessageCount.rx.request()
+        API.Main.unreadMessageCount.rx.request()
             .ensureResponseStatus()
             .mapObject(ZJRequestResult<Int>.self)
             .map { $0.data ?? 0 }
@@ -88,7 +90,7 @@ extension Request.main {
 
     static func getUnreadCouponCount() -> Single<Int> {
         
-        API.unUsedCouponCount.rx.request()
+        API.Main.unUsedCouponCount.rx.request()
             .ensureResponseStatus()
             .mapObject(ZJRequestResult<[String: Int]>.self)
             .map { $0.data?["newCouponNum"] ?? 0 }
@@ -97,13 +99,35 @@ extension Request.main {
 
     static func hasUnReadChatMessage() -> Single<Bool> {
         
-        API.userImInfo.rx.request()
+        API.Main.userImInfo.rx.request()
             .ensureResponseStatus()
             .mapObject(RootModel<[String: Any]>.self)
             .map { ($0.data?["hasUnreadMsg"] as? Bool) ?? false }
         
     }
     
+    
+}
+
+extension Request.Setting {
+    
+    static func getAppUpdateInfo() -> Single<UpdateInfoModel> {
+        
+        API.Setting.appUpdateInfo.rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<UpdateInfoModel>.self)
+            .map { $0.data ?? .init() }
+        
+    }
+    
+    static func logout() -> Single<Bool> {
+        
+        API.Setting.logout.rx.request()
+            .ensureResponseStatus()
+            .mapObject(RootModel<[String: Any]>.self)
+            .map { $0.success }
+        
+    }
     
 }
 

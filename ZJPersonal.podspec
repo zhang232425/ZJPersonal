@@ -49,5 +49,6 @@ Pod::Spec.new do |s|
   s.dependency 'ZJCommonDefines'
   s.dependency 'ZJLoginManager'
   s.dependency 'ZJValidator'
+  s.dependency 'ZJDevice'
   
 end

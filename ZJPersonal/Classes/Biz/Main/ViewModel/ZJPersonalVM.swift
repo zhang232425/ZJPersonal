@@ -21,36 +21,36 @@ final class ZJPersonalVM {
     private let sections = BehaviorRelay<[ZJPersonalSection]>(value: [])
     
     private(set) lazy var inviteCouponNoticeAction: Action<(), String> = .init {
-        Request.main.inviteCouponNotice()
+        Request.Main.inviteCouponNotice()
     }
     
     private(set) lazy var profileAction: Action<Bool, ZJUserProfile> = .init {
         if $0 {
-            return Request.main.fetchUserProfile().asObservable()
+            return Request.Main.fetchUserProfile().asObservable()
         }
         if let data = ZJLoginManager.shared.profile, ZJLoginManager.shared.isLogin {
             return .just(data)
         }
-        return Request.main.fetchUserProfile().asObservable()
+        return Request.Main.fetchUserProfile().asObservable()
     }
     
     private(set) lazy var unreadMsgCountAction: Action<(), Int> = .init {
         if ZJLoginManager.shared.isLogin {
-            return Request.main.getUnreadMessageCount()
+            return Request.Main.getUnreadMessageCount()
         }
         return .just(0)
     }
     
     private(set) lazy var unUsedCouponsAction: Action<(), Int> = .init {
         if ZJLoginManager.shared.isLogin {
-            return Request.main.getUnreadCouponCount()
+            return Request.Main.getUnreadCouponCount()
         }
         return .just(0)
     }
     
     private(set) lazy var hasUnReadChatMsgAction: Action<(), Bool> = .init {
         if ZJLoginManager.shared.isLogin {
-            return Request.main.hasUnReadChatMessage().asObservable()
+            return Request.Main.hasUnReadChatMessage().asObservable()
         }
         return .just(false)
     }
@@ -69,14 +69,14 @@ private extension ZJPersonalVM {
         
         unreadMsgCountAction = Action<(), Int>(workFactory: { _ -> Observable<Int> in
             if ZJLoginManager.shared.isLogin {
-                return Request.main.getUnreadMessageCount().asObservable()
+                return Request.Main.getUnreadMessageCount().asObservable()
             }
             return .just(0)
         })
         
         unUsedCouponsAction = Action<(), Int>(workFactory: { _ -> Observable<Int> in
             if ZJLoginManager.shared.isLogin {
-                return Request.main.getUnreadCouponCount().asObservable()
+                return Request.Main.getUnreadCouponCount().asObservable()
             }
             return .just(0)
         })
@@ -85,19 +85,8 @@ private extension ZJPersonalVM {
 
     func setupData() {
     
-        isLogin.accept(ZJLoginManager.shared.isLogin)
         sections.accept([.relationship, .helperChat, .settings])
         unreadMsgCountAction.execute()
-        profileAction.execute(false)
-        
-        /**
-         hasUnReadChatMsgAction = Action<(), Bool>(workFactory: { _ -> Observable<Bool> in
-             if ASLoginManager.shared.isLogin {
-                 return RxRequest.usermain.hasUnReadChatMsg().asObservable()
-             }
-             return .just(false)
-         })
-         */
         
     }
     

@@ -23,6 +23,8 @@ enum ZJPersonalSection {
     
 }
 
+extension ZJPersonalSection: CommonResponderEvent {}
+
 extension ZJPersonalSection {
     
     var title: String {

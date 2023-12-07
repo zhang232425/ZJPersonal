@@ -28,3 +28,141 @@
 "chat_phone_call_desc" = "Call AsetKu Official Hotline";
 "download_telegram" = "Please download Telegram first";
 "generating_certificate" = "Failed to generate Certificate. Please participate in the Program again";
+
+// MARK: ====== 设置
+
+"confirm" = "Confirm";
+"markMessagesRead" = "Set All Read";
+"markAllMessageReadNotice" = "Are you sure to set all unread messages to read?";
+"settingTitle" = "Settings";
+"languageSelection" = "Language";
+"signOut" = "Log out";
+"setLoginPassword" = "Set login password";
+"setPasswordHint" = "Please enter 8-16 digits password";
+"passwordFormatError" = "The format of the password you set is incorrect. Password must be 8-16 characters";
+"setPasswordSuccess" = "Set password successfully";
+"changeLoginPassword" = "Change login password";
+"changePasswordSuccess" = "Password has been changed successfully";
+"newPwdCannotBeSameToOld" = "The new password can not be the same as the old password";
+"touchIdConfigItemTitle" = "Fingerprint Password";
+"faceIdConfigItemTitle" = "Face ID Password";
+"touchIdEvaluateReason" = "Put your finger on the device fingerprint recognition area to verify the fingerprint";
+"faceIdEvaluateReason" = "Please use Face ID to verify your identity";
+"evaluationFailToast" = "Verification failed, please try again";
+"passcodeNotSetToast" = "No password is set for the device, please turn on the password first";
+"biometryLockoutToast" = "Too many incorrect attempts, please try again later";
+"touchNotEnrolledToast" = "Fingerprint is off. Please go to system settings to turn on fingerprint.";
+"faceNotEnrolledToast" = "Face ID is off. Please go to the system settings to turn on Face ID.";
+"touchIdPasswordEnabled" = "The fingerprint password is on";
+"touchIdPasswordDisabled" = "The fingerprint password is off";
+"faceIdPasswordEnabled" = "Successfully activated Face ID";
+"faceIdPasswordDisabled" = "Face ID has been deactivated";
+"appVersionTitle" = "App Version";
+"alreadyTheLatestVersion" = "Already the latest version";
+"clearCache" = "Clear Cache";
+"accountDeletion" = "Account Deletion";
+
+"logoutSuccess" = "Log out success!";
+
+// MARK: ====== 个人中心首页
+
+"wealthScore" = "Wealth Score";
+"pleaseLogin" = "Register/Login to enjoy more privileges";
+"coupon" = "Coupons";
+"task" = "Task";
+"privilege" = "Privileges";
+"login" = "LOG IN";
+"electronicSignature" = "Electronic signature";
+"message" = "Messages";
+"invitationReward" = "Referral Rewards";
+"rm_baManager" = "RM / BA Manager";
+"performanceManagement" = "Achievements Management";
+"customerService" = "CS & FAQ";
+"setting" = "Settings";
+"aboutUs" = "About Asetku";
+
+//MARK: ====== 个人信息
+
+"userInfoTitle" = "Personal Info";
+
+"headPortrait" = "Profile Picture";
+
+"nickname" = "Nickname";
+
+"authentication" = "Verification";
+
+"phoneNumber" = "Mobile Number";
+
+"myBankCard" = "Bank Card";
+
+"finishCertificationAlertText" = "Please complete the verification";
+
+"passwordManagement" = "Password Settings";
+
+"toAuthenticate" = "Verify";
+
+"verified" = "Verified";
+
+"authenticating" = "Verifying";
+
+"locked" = "Locked";
+
+"takingPicture" = "Take a photo";
+
+"useDefaultAvatar" = "Use Default Avatar";
+
+"rmManagerTitle" = "RM / BA Manager";
+
+"changeRM_BATips" = "If you want to change RM / BA, please contact customer service";
+
+"code" = "code";
+
+"NPWP" = "NPWP";
+
+//MARK: ====== 绑定邮箱
+
+"toAdd" = "To Add";
+
+"currentEmail" = "Current Email";
+
+"changeEmail" = "Change E-mail";
+
+"bindEmail" = "Bind Email";
+
+"updateEmail" = "Update Email";
+
+"enterEmailTips" = "Please enter email";
+
+"getEmailVerficationCode" = "Get email verification code";
+
+"verifyEmail" = "Verify Email";
+
+"verificationCodeHasBeenSentTips" = "The verification code has been sent to %@. The code is valid within 15 minutes";
+
+"resend" = "Resend";
+
+"enterEmailVerficationCode" = "Enter email verification code";
+
+"incorrectVerificationCodeTips" = "Incorrect verification code. Please enter again.";
+
+"nextStep" = "Next Step";
+
+"boundSuccessfully" = "Bound Successfully";
+
+"updateSuccessfully" = "Update Successfully";
+
+"done" = "Done";
+
+//MARK: ====== 修改昵称
+
+"changeNicknameTitle" = "Change Nickname";
+
+"toSet" = "Set";
+
+"changeNicknameTips" = "Nickname within 20 characters";
+
+"save" = "Save";
+
+"setupFailed" = "Setup Failed";
+
+"setupSuccessfully" = "Successfully Setup";

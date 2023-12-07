@@ -20,23 +20,27 @@ extension ZJPersonalVC {
             present(vc: ZJLoginRoutableTarget.login.viewController)
             
         case ZJPersonalClickEvent.messageIcon.name:
-//            if ZJLoginManager.shared.isLogin {
-//                push(to: ZJPersonalMessageVC())
-//            } else {
-//                present(vc: ZJLoginRoutableTarget.login.viewController)
-//            }
+            if ZJLoginManager.shared.isLogin {
+                push(to: ZJPersonalMessageVC())
+            } else {
+                present(vc: ZJLoginRoutableTarget.login.viewController)
+            }
         
-            dismiss(animated: true)
-            
         case ZJPersonalClickEvent.inviteFriends.name:
             print("inviteFriends")
             
         case ZJPersonalClickEvent.couponList.name:
             print("couponList")
             
+        case ZJPersonalClickEvent.userProfile.name:
+            print("userProfile")
+            
+        case ZJPersonalSection.settings.name:
+            let vc = ZJPersonalSettingVC()
+            push(to: vc)
+            
         default:
             break
-            
         }
         
     }

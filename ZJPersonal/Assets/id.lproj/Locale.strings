@@ -28,3 +28,141 @@
 "chat_phone_call_desc" = "Hubungi Hotline Resmi AsetKu";
 "download_telegram" = "Silakan download Telegram dahulu";
 "generating_certificate" = "Sertifikat gagal dibuat. Silakan berpartisipasi lagi dalam Program";
+
+//MARK: ====== 设置
+
+"confirm" = "Konfirmasi";
+"markMessagesRead" = "Atur Semua Dibaca";
+"markAllMessageReadNotice" = "Apakah yakin atur semua pesan yang belum dibaca menjadi telah dibaca?";
+"settingTitle" = "Pengaturan";
+"languageSelection" = "Bahasa";
+"signOut" = "Keluar";
+"setLoginPassword" = "Atur kata sandi login";
+"setPasswordHint" = "Silakan Masukkan 8-16 Digit Kata Sandi";
+"passwordFormatError" = "Format kata sandi yang Anda buat salah.Kata sandi harus 8-16 huruf.";
+"setPasswordSuccess" = "Atur kata sandi berhasil";
+"changeLoginPassword" = "Ubah kata sandi login";
+"changePasswordSuccess" = "Kata sandi telah berhasil diubah";
+"newPwdCannotBeSameToOld" = "Kata sandi baru tidak boleh sama dengan kata sandi lama";
+"touchIdConfigItemTitle" = "Login Sidik Jari";
+"faceIdConfigItemTitle" = "Kata Sandi Face ID";
+"touchIdEvaluateReason" = "Letakkan jari di sensor sidik jari untuk memverifikasi sidik jari Anda";
+"faceIdEvaluateReason" = "Silakan gunakan Face ID untuk verifikasi identitas Anda";
+"evaluationFailToast" = "Verifikasi gagal. Silakan coba kembali";
+"passcodeNotSetToast" = "Perangkat belum diatur kata sandi. Silakan aktifkan kata sandi";
+"biometryLockoutToast" = "Jumlah kesalahan terlalu banyak. Silakan coba kembali beberapa saat";
+"touchNotEnrolledToast" = "Sidik jari belum diaktifkan, silakan ke pengaturan sistem untuk mengaktifkan sidik jari";
+"faceNotEnrolledToast" = "Face ID belum diaktifkan, silakan ke pengaturan sistem untuk mengaktifkan Face ID";
+"touchIdPasswordEnabled" = "Login sidik jari berhasil diaktifkan";
+"touchIdPasswordDisabled" = "Login sidik jari telah dinonaktifkan";
+"faceIdPasswordEnabled" = "Berhasil aktifkan Face ID";
+"faceIdPasswordDisabled" = "Telah nonaktifkan Face ID";
+"appVersionTitle" = "Versi App";
+"alreadyTheLatestVersion" = "Versi Terbaru";
+"clearCache" = "Hapus Cache";
+"accountDeletion" = "Penghapusan Akun";
+
+"logoutSuccess" = "Sukses keluar!";
+
+//MARK: ====== 个人中心首页
+
+"wealthScore" = "Skor Kekayaan";
+"pleaseLogin" = "Daftar/Masuk untuk menikmati lebih banyak hak istimewa";
+"coupon" = "Kupon";
+"task" = "Tugas";
+"privilege" = "Hak Istimewa";
+"login" = "LOG IN";
+"electronicSignature" = "Tanda Tangan Elektronik";
+"message" = "Notifikasi";
+"invitationReward" = "Hadiah Referral";
+"rm_baManager" = "Manajer RM / BA";
+"performanceManagement" = "Manajemen Pencapaian";
+"customerService" = "CS & FAQ";
+"setting" = "Pengaturan";
+"aboutUs" = "Tentang Asetku";
+
+//MARK: ====== 个人信息
+
+"userInfoTitle" = "Informasi Pribadi";
+
+"headPortrait" = "Foto Profil";
+
+"nickname" = "Nama Panggilan";
+
+"authentication" = "Verifikasi";
+
+"phoneNumber" = "Nomor Telepon";
+
+"myBankCard" = "Rekening Bank";
+
+"finishCertificationAlertText" = "Silakan lengkapi verifikasi";
+
+"passwordManagement" = "Pengaturan Kata Sandi";
+
+"toAuthenticate" = "Verifikasi";
+
+"verified" = "Terverifikasi";
+
+"authenticating" = "Memverifikasi";
+
+"locked" = "Dibekukan";
+
+"takingPicture" = "Mengambil Foto";
+
+"useDefaultAvatar" = "Gunakan Avatar Default";
+
+"rmManagerTitle" = "RM / BA Manager";
+
+"changeRM_BATips" = "Jika Anda ingin mengubah RM / BA, silakan hubungi Customer Service";
+
+"code" = "kode";
+
+"NPWP" = "NPWP";
+
+//MARK: ====== 绑定邮箱
+
+"toAdd" = "Tambahkan";
+
+"currentEmail" = "Email Saat ini";
+
+"changeEmail" = "Ubah E-mail";
+
+"bindEmail" = "Hubungkan Email";
+
+"updateEmail" = "Perbarui Email";
+
+"enterEmailTips" = "Silakan masukkan email";
+
+"getEmailVerficationCode" = "Dapatkan kode verifikasi email";
+
+"verifyEmail" = "Verifikasi Email";
+
+"verificationCodeHasBeenSentTips" = "Kode verifikasi telah dikirim ke %@. Berlaku 15 menit";
+
+"resend" = "Kirim Ulang";
+
+"enterEmailVerficationCode" = "Masukkan kode verifikasi email";
+
+"incorrectVerificationCodeTips" = "Kode verifikasi salah. Silakan masukkan kembali";
+
+"nextStep" = "Selanjutnya";
+
+"boundSuccessfully" = "Berhasil Terhubung";
+
+"updateSuccessfully" = "Perbarui Berhasil";
+
+"done" = "Selesai";
+
+//MARK: ====== 修改昵称
+
+"changeNicknameTitle" = "ubah nama pengguna";
+
+"toSet" = "Mendirikan";
+
+"changeNicknameTips" = "Nama panggilan dalam 20 karakter";
+
+"save" = "Menyimpan";
+
+"setupFailed" = "Gagal di atur";
+
+"setupSuccessfully" = "Berhasil di atur";

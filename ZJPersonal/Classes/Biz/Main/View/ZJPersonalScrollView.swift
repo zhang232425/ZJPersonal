@@ -71,6 +71,11 @@ extension ZJPersonalScrollView {
             
         } else {
             
+            [loginOutView, loginOnView].forEach {
+                stackView.removeArrangedSubview($0)
+                $0.removeFromSuperview()
+            }
+            
             loginOutView = .init()
             stackView.insertArrangedSubview(loginOutView, at: 0)
             

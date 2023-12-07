@@ -91,7 +91,7 @@ private extension ZJPersonalSectionItemView {
     
     @objc func click() {
         
-        
+        section.post(by: self)
         
     }
     
