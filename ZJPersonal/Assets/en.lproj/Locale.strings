@@ -166,3 +166,39 @@
 "setupFailed" = "Setup Failed";
 
 "setupSuccessfully" = "Successfully Setup";
+
+
+"expired" = "Expired";
+
+"used" = "Used";
+
+"available" = "Available";
+
+
+"noNewsYet"             = "No message yet...";
+"messageDetail"         = "News Details";
+"coupons"               = "Coupons";
+"noCouponsYet"          = "No coupons yet...";
+"bankcard"              = "Bank Account";
+"contact_us"            = "Contact Us";
+"custom_service"        = "Contact CS";
+"Investment_Advisor"    = "Lending counselor";
+"Settings"              = "Settings";
+"about"                 = "About Asetku";
+
+
+"noMore" = "-no more-";
+"inviteJoinTitle" = "Invite friends to join Asetku member";
+"inviteJoinDesc1" = "Invited new users will get gift package";
+"inviteJoinDesc2" = "You will get 1% interest added coupon when your invited friends fund for the first time";
+"couponBirthdayGift" = "Birthday Gift";
+"couponNewLenderGift" = "New Lender's Gift";
+"couponUpgradeGift" = "Upgrade Gift";
+"membershipShareContent" = "Hey, I've funded in Asetku and invite you to join with me. You will get new user's gift worth above Rp100.000 after registration! Join Asetku referral program, the more friends you invite, the more coupons you will get.";
+
+"useNow" = "Use Now";
+
+"expirationDate" = "Expiration Date ";
+
+"noSignal" = "No signal yet";
+"refresh" = "Refresh";

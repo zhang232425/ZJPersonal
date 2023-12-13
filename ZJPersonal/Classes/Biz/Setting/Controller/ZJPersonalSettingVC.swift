@@ -14,6 +14,9 @@ import ZJLoginManager
 import ZJDevice
 import ZJCommonDefines
 import ZJHUD
+#if DEBUG
+import SDWebImage
+#endif
 
 class ZJPersonalSettingVC: BaseVC {
 
@@ -145,6 +148,10 @@ private extension ZJPersonalSettingVC {
                 
                 let cell: SettingLangugeCell = tableView.dequeueReuseableCell(forIndexPath: indexPath)
                 cell.setRowInfo(item)
+                cell.languageSwitchValueChanged = { [weak self] isOn in
+                    let language: ZJLocalizedCode = isOn ? .id : .en
+                    self?.changeLanaguage(language)
+                }
                 return cell
                 
             case .appVersion:
@@ -193,6 +200,14 @@ private extension ZJPersonalSettingVC {
         
         viewModel.logoutAction.elements
             .subscribeNext(weak: self, ZJPersonalSettingVC.logout)
+            .disposed(by: disposeBag)
+        
+        viewModel.logoutAction.executing
+            .subscribeNext(weak: self, ZJPersonalSettingVC.doProgress)
+            .disposed(by: disposeBag)
+        
+        viewModel.logoutAction.errors
+            .subscribeNext(weak: self, ZJPersonalSettingVC.doError)
             .disposed(by: disposeBag)
         
         tableView.rx.itemSelected.subscribe(onNext: { [weak self] in
@@ -283,38 +298,37 @@ private extension ZJPersonalSettingVC {
         switch row {
         case .userProfile:
             print("个人资料")
+            
         case .appVersion:
-            print("版本更新")
+            if UserDefaults.VersionInfo.hasNew {
+                if let url = URL(string: UserDefaults.VersionInfo.updateLink), UIApplication.shared.canOpenURL(url) {
+                    UIApplication.shared.open(url: url)
+                } else {
+                    if let url = URL(string:ZJUrl.appStore) { UIApplication.shared.open(url: url) }
+                }
+            } else {
+                ZJHUD.noticeOnlyText(Locale.alreadyTheLatestVersion.localized)
+            }
+            
         case .cache:
-            print("清空缓存")
+            ZJHUD.showProgress(in: view, type: .dimBackground(color: nil))
+            SandboxCacheUtil.clearCache(completion: { [weak self] in
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { ZJHUD.hideProgress() }
+                self?.refreshItem(row: .cache(0))
+            })
+            #if DEBUG
+            SDImageCache.shared.clearDisk(onCompletion: nil)
+            #endif
+            
         case .logout:
-            requestLogout()
+            viewModel.logoutAction.execute()
+            
         case .cancelAccount:
             print("注销账号")
+            
         default:
             break
         }
-        
-    }
-    
-    func requestLogout() {
-        
-        /**
-         API(PersonalAPI.logout)
-             .showLoading(in: view)
-             .showToast(.onRequestError)
-             .requestObject(success: { (root: AnyRootModel) in
-                 if root.success {
-                     ASLoginManager.shared.logout()
-                     NotificationCenter.default.post(name: ASNotification.didLogout, object: nil)
-                     HUD.showToast(StringAsset.logoutSuccess.localized)
-                 } else {
-                     HUD.showToast(root.validated.errMsg)
-                 }
-             })
-         */
-        
-        viewModel.logoutAction.execute()
         
     }
     
@@ -323,7 +337,36 @@ private extension ZJPersonalSettingVC {
         ZJLoginManager.shared.logout()
         NotificationCenter.default.post(name: ZJNotification.didLogout, object: nil)
         ZJHUD.noticeOnlyText(Locale.logoutSuccess.localized)
+        self.navigationController?.popViewController(animated: true)
         
+    }
+    
+    func changeLanaguage(_ language: ZJLocalizedCode) {
+        
+        /**
+         let completion = { [weak self] (_: AnyRootModel?) in
+             ASLocalizer.change(language: language)
+             
+             if ASLoginManager.shared.isLogin {
+                 ASLoginManager.shared.fetchUserProfile(success: {_ in }, failure: {_ in })
+             }
+             
+             self?.requestAppVersion()
+             
+             let moduleId = language == .en ? "102" : "123"
+             AnalyticsEvent.settingsLanguageSelectionClick.report(extra: [.moduleId(moduleId)])
+         }
+         
+         if ASLoginManager.shared.isLogin {
+             API(PersonalAPI.changeLanguage(languageId: language.mapToRequestLanguage().rawValue))
+                 .showLoading(in: view)
+                 .showToast([.onRequestError, .onBizError])
+                 .requestObject(success: completion)
+         } else {
+             completion(nil)
+         }
+         */
+    
     }
     
 }

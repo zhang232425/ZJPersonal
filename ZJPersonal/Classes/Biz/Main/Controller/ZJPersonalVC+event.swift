@@ -30,7 +30,11 @@ extension ZJPersonalVC {
             print("inviteFriends")
             
         case ZJPersonalClickEvent.couponList.name:
-            print("couponList")
+            if ZJLoginManager.shared.isLogin {
+                push(to: ZJPersonalCouponsVC())
+            } else {
+                present(vc: ZJLoginRoutableTarget.login.viewController)
+            }
             
         case ZJPersonalClickEvent.userProfile.name:
             print("userProfile")

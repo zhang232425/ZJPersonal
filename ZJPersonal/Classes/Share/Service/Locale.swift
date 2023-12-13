@@ -33,7 +33,7 @@ enum Locale: String {
     case generating_certificate
     
     //MARK: ====== 设置
-    
+
     case confirm
     case markMessagesRead
     case markAllMessageReadNotice
@@ -168,6 +168,37 @@ enum Locale: String {
     case setupFailed
     
     case setupSuccessfully
+    
+    case expired
+    case used
+    case available
+    
+    case noNewsYet
+    case messageDetail
+    case coupons
+    case noCouponsYet
+    case bankcard
+    case contact_us
+    case custom_service
+    case Investment_Advisor
+    case Settings
+    case about
+
+    case noMore
+    case inviteJoinTitle //✅
+    case inviteJoinDesc1 //✅
+    case inviteJoinDesc2 //✅
+    case couponBirthdayGift //✅
+    case couponNewLenderGift //✅
+    case couponUpgradeGift //✅
+    case membershipShareContent //✅
+    
+    case useNow // 新版优惠券
+    
+    case expirationDate
+    
+    case noSignal
+    case refresh
 
 }
 

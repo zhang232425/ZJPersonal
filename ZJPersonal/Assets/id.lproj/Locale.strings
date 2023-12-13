@@ -166,3 +166,36 @@
 "setupFailed" = "Gagal di atur";
 
 "setupSuccessfully" = "Berhasil di atur";
+
+
+"expired" = "Kadaluarsa";
+
+"used" = "Terpakai";
+
+"available" = "Tersedia";
+
+"noNewsYet"             = "Belum ada pesan...";
+"messageDetail"         = "Rician berita";
+"coupons"               = "Kupon";
+"noCouponsYet"          = "Belum ada kupon...";
+"bankcard"              = "Akun Bank";
+"contact_us"            = "Hubungi kami";
+"custom_service"        = "Kontak CS";
+"Investment_Advisor"    = "Konsultan pendanaan";
+"Settings"              = "Pengaturan";
+"about"                 = "Tentang Asetku";
+
+"noMore" = "-Tidak ada-";
+"inviteJoinTitle" = "Undang teman untuk bergabung dengan anggota Asetku";
+"inviteJoinDesc1" = "Pengguna baru yang diundang akan mendapatkan paket hadiah";
+"inviteJoinDesc2" = "Anda akan mendapatkan kupon tambahan bunga 1% ketika teman yang diundang mendanai untuk pertama kalinya";
+"couponBirthdayGift" = "Hadiah Ulang Tahun";
+"couponNewLenderGift" = "Hadiah Pendana Baru";
+"couponUpgradeGift" = "Hadiah Peningkatan";
+"membershipShareContent" = "Hei, saya sudah mendanai di Asetku dan mengundang Anda untuk bergabung dengan saya. Anda akan mendapatkan hadiah pengguna baru senilai lebih dari Rp100.000 setelah mendaftar! Bergabunglah dengan program referral Asetku, semakin banyak teman yang Anda undang, semakin banyak kupon yang akan Anda dapatkan.";
+
+"useNow" = "Pakai";
+"expirationDate" = "Berlaku sampai ";
+
+"noSignal" = "Tidak Ada Sinyal";
+"refresh" = "Coba Lagi";

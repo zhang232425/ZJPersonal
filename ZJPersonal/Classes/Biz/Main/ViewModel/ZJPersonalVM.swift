@@ -110,7 +110,7 @@ private extension ZJPersonalVM {
             self?.hasUnReadChatMsgAction.execute()
         }).disposed(by: disposeBag)
         
-        Observable.merge(didLogin, didKickOff).subscribe(onNext: { [weak self] _ in
+        Observable.merge(didLogout, didKickOff).subscribe(onNext: { [weak self] _ in
             self?.unreadMsgCountAction.execute()
             self?.unUsedCouponsAction.execute()
             self?.hasUnReadChatMsgAction.execute()

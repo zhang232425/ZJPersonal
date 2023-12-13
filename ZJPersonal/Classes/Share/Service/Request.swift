@@ -21,6 +21,8 @@ extension Request {
     
     enum Setting {}
     
+    enum Coupon {}
+    
 }
 
 extension Request.Main {
@@ -126,6 +128,20 @@ extension Request.Setting {
             .ensureResponseStatus()
             .mapObject(RootModel<[String: Any]>.self)
             .map { $0.success }
+        
+    }
+    
+}
+
+extension Request.Coupon {
+    
+    static func getCouponList(status: Int, nextPage: Int?) -> Observable<CouponWrapperModel> {
+        
+        API.Coupon.getCouponList(status: status, nextPage: nextPage).rx.request()
+            .ensureResponseStatus()
+            .mapObject(ZJRequestResult<CouponWrapperModel>.self)
+            .map { $0.data ?? .init() }
+            .asObservable()
         
     }
     

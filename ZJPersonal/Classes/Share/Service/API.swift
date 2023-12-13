@@ -41,6 +41,16 @@ enum API {
         /// 退出登录
         case logout
         
+        /// 切换语言
+        case changeLanguage(languageId: String)
+        
+    }
+    
+    enum Coupon {
+        
+        /// 获取优惠券列表
+        case getCouponList(status: Int, nextPage: Int?)
+        
     }
     
 }
@@ -108,6 +118,8 @@ extension API.Setting: ZJRequestTargetType {
             return "/support/versionDetail/getByApp"
         case .logout:
             return "/user/logout"
+        case .changeLanguage:
+            return "/user/modifyUser"
         }
     }
     
@@ -116,6 +128,8 @@ extension API.Setting: ZJRequestTargetType {
         case .appUpdateInfo:
             return .get
         case .logout:
+            return .post
+        case .changeLanguage:
             return .post
         }
     }
@@ -127,6 +141,9 @@ extension API.Setting: ZJRequestTargetType {
             return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         case .logout:
             return .requestPlain
+        case .changeLanguage(let languageId):
+            let parameters = ["languageId": languageId]
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default)
         }
     }
     
@@ -138,6 +155,41 @@ extension API.Setting: ZJRequestTargetType {
     
     var stubBehavior: StubBehavior { .never }
     
+}
+
+extension API.Coupon: ZJRequestTargetType {
     
+    var baseURL: URL { URL(string: ZJUrl.server + "/api/app")! }
+    
+    var path: String {
+        switch self {
+        case .getCouponList:
+            return "/activity/coupon/app/user/list"
+        }
+    }
+    
+    var method: Moya.Method {
+        switch self {
+        case .getCouponList:
+            return .get
+        }
+    }
+    
+    var task: Task {
+        switch self {
+        case .getCouponList(let status, let nextPage):
+            var parameters = ["status": "\(status)"]
+            if let page = nextPage { parameters["page"] = "\(page)" }
+            return .requestParameters(parameters: parameters, encoding: URLEncoding.default) // size 默认20
+        }
+    }
+    
+    var headers: [String : String]? { nil }
+    
+    var timeoutInterval: TimeInterval { 30 }
+    
+    var sampleData: Data { .init() }
+    
+    var stubBehavior: StubBehavior { .never }
     
 }

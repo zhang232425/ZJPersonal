@@ -20,6 +20,8 @@ class BaseVC: ZJViewController {
     var hud: ZJHUDView?
     
     var hudSuperView: UIView?
+    
+    private(set) var noSignalView: ZJNoSignalView?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,7 @@ class BaseVC: ZJViewController {
     }
     
     func doProgress(_ executing: Bool) {
+        noSignalView?.removeFromSuperview()
         view.endEditing(true)
         if executing {
             hud?.hide()
@@ -36,6 +39,17 @@ class BaseVC: ZJViewController {
             hud?.hide()
         }
     }
+    
+    func showNoSignalView(_ :()) {
+        let errorView = noSignalView ?? ZJNoSignalView()
+        errorView.removeFromSuperview()
+        errorView.add(to: view).then {
+            noSignalView = $0
+        }.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+    }
+
     
     func doError(_ error: ActionError) {
         if case .underlyingError(let err) = error {
