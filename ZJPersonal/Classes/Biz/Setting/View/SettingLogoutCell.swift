@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingLogoutCell: BaseTableViewCell {
+class SettingLogoutCell: BaseListCell {
     
     private lazy var titleLabel = UILabel().then {
         $0.font = .medium16

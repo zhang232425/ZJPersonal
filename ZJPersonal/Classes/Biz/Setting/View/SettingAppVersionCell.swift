@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingAppVersionCell: BaseTableViewCell {
+class SettingAppVersionCell: BaseListCell {
 
     private lazy var titleLabel = UILabel().then {
         $0.font = .regular14

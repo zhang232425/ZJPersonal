@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingCommonCell: BaseTableViewCell {
+class SettingCommonCell: BaseListCell {
 
     private lazy var titleLabel = UILabel().then {
         $0.font = .regular14

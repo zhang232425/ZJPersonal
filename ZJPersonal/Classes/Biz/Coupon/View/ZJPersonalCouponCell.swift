@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ZJPersonalCouponCell: BaseTableViewCell {
+class ZJPersonalCouponCell: BaseListCell {
     
     private let orangeColor = UIColor(hexString: "#FF7D0F")
     

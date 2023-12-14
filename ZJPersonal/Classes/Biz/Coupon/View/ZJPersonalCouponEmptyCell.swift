@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ZJPersonalCouponEmptyCell: BaseTableViewCell {
+class ZJPersonalCouponEmptyCell: BaseListCell {
 
     private(set) lazy var iconImageView = UIImageView(image: .named("img_coupon_empty"))
     

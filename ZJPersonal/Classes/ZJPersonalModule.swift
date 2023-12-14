@@ -20,7 +20,7 @@ public struct ZJPersonalModule: ZJModule {
         }
         
         ZJPersonalRoutableTarget.register(path: ZJPersonalRoutePath.test) { _ in
-            return ZJTestVC()
+            return TestVC()
         }
         
     }

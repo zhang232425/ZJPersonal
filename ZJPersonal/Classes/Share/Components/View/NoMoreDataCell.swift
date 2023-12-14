@@ -7,7 +7,7 @@
 
 import UIKit
 
-class NoMoreDataCell: BaseTableViewCell {
+class NoMoreDataCell: BaseListCell {
     
     private lazy var label = UILabel().then {
         $0.textColor = .init(hexString: "#999999")

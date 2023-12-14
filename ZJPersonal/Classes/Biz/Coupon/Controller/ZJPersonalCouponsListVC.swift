@@ -60,21 +60,10 @@ private extension ZJPersonalCouponsListVC {
         
         tableView.rx.addLoadingFooter.bind(to: viewModel.loadMoreAction.inputs).disposed(by: disposeBag)
         
-        /**
-         tableView.rx.modelSelected(DepositHistoryVM.SectionItem.self).subscribe(onNext: { [weak self] in
-             switch $0 {
-             case .item(let info):
-                 self?.navigationToHistoryDetail(item: info.item)
-             default:
-                 break
-             }
-         }).disposed(by: disposeBag)
-         */
-        
         tableView.rx.modelDeleted(ZJPersonalCouponsVM.SectionItem.self).subscribe(onNext: {
             switch $0 {
             case .item(let model):
-                print("model.subname ==== \(model.subname)")
+                print("model.subname ==== \(model.subname ?? "")")
             default:
                 break
             }

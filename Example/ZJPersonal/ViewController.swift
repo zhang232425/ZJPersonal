@@ -25,6 +25,14 @@ class ViewController: UITabBarController {
             
         }
         
+        if let vc = ZJPersonalRoutableTarget.test.viewController {
+            
+            let textVC = ZJNavigationController(rootViewController: vc)
+            textVC.tabBarItem = .init(title: "Test", image: UIImage(color: .blue, size: .init(width: 10, height: 10)), tag: 0)
+            controllers.append(textVC)
+             
+        }
+        
         if let vc = ZJLoginRoutableTarget.login.viewController {
             
             let loginVC = ZJNavigationController(rootViewController: vc)
@@ -32,6 +40,7 @@ class ViewController: UITabBarController {
             controllers.append(loginVC)
             
         }
+        
         
         viewControllers = controllers
         

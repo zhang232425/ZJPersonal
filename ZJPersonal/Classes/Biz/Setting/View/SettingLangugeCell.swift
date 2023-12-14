@@ -10,7 +10,7 @@ import RxSwift
 import RxCocoa
 import ZJLocalizable
 
-class SettingLangugeCell: BaseTableViewCell {
+class SettingLangugeCell: BaseListCell {
     
     private let disposebag = DisposeBag()
     
