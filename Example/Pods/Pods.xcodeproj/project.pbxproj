@@ -1393,6 +1393,14 @@
 		D676C7C22B2AA66500C4B295 /* SegmentedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7C12B2AA66500C4B295 /* SegmentedCell.swift */; };
 		D676C7C52B2AA8E600C4B295 /* TestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7C42B2AA8E600C4B295 /* TestModel.swift */; };
 		D676C7C92B2AAC0700C4B295 /* JXPagingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7C82B2AAC0700C4B295 /* JXPagingVC.swift */; };
+		D676C7CB2B2AB20B00C4B295 /* CustomizeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7CA2B2AB20B00C4B295 /* CustomizeCell.swift */; };
+		D676C7CD2B2ADB9200C4B295 /* ContentBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7CC2B2ADB9200C4B295 /* ContentBaseViewController.swift */; };
+		D676C7CF2B2ADFBE00C4B295 /* ListBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7CE2B2ADFBE00C4B295 /* ListBaseViewController.swift */; };
+		D676C7D12B2B0AD700C4B295 /* JXSegmentedMixcellDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7D02B2B0AD700C4B295 /* JXSegmentedMixcellDataSource.swift */; };
+		D676C7D32B2B26C900C4B295 /* SegmentedControlVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7D22B2B26C900C4B295 /* SegmentedControlVC.swift */; };
+		D67B1F7E2B2BF3C200D4E5FC /* NestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F7D2B2BF3C200D4E5FC /* NestViewController.swift */; };
+		D67B1F802B2BF47300D4E5FC /* NestChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F7F2B2BF47300D4E5FC /* NestChildViewController.swift */; };
+		D67B1F822B2C29B200D4E5FC /* LoadDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F812B2C29B200D4E5FC /* LoadDataViewController.swift */; };
 		D6842A672B21C6C30032DB26 /* ZJPersonalCouponsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6842A662B21C6C30032DB26 /* ZJPersonalCouponsVC.swift */; };
 		D6842A692B21C8B80032DB26 /* ZJPersonalCouponsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6842A682B21C8B80032DB26 /* ZJPersonalCouponsListVC.swift */; };
 		D6842A6D2B21C99C0032DB26 /* ZJPersonalCouponsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6842A6C2B21C99C0032DB26 /* ZJPersonalCouponsVM.swift */; };
@@ -4120,6 +4128,14 @@
 		D676C7C12B2AA66500C4B295 /* SegmentedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedCell.swift; sourceTree = "<group>"; };
 		D676C7C42B2AA8E600C4B295 /* TestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModel.swift; sourceTree = "<group>"; };
 		D676C7C82B2AAC0700C4B295 /* JXPagingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXPagingVC.swift; sourceTree = "<group>"; };
+		D676C7CA2B2AB20B00C4B295 /* CustomizeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomizeCell.swift; sourceTree = "<group>"; };
+		D676C7CC2B2ADB9200C4B295 /* ContentBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentBaseViewController.swift; sourceTree = "<group>"; };
+		D676C7CE2B2ADFBE00C4B295 /* ListBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBaseViewController.swift; sourceTree = "<group>"; };
+		D676C7D02B2B0AD700C4B295 /* JXSegmentedMixcellDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JXSegmentedMixcellDataSource.swift; sourceTree = "<group>"; };
+		D676C7D22B2B26C900C4B295 /* SegmentedControlVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlVC.swift; sourceTree = "<group>"; };
+		D67B1F7D2B2BF3C200D4E5FC /* NestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestViewController.swift; sourceTree = "<group>"; };
+		D67B1F7F2B2BF47300D4E5FC /* NestChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestChildViewController.swift; sourceTree = "<group>"; };
+		D67B1F812B2C29B200D4E5FC /* LoadDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataViewController.swift; sourceTree = "<group>"; };
 		D6842A662B21C6C30032DB26 /* ZJPersonalCouponsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalCouponsVC.swift; sourceTree = "<group>"; };
 		D6842A682B21C8B80032DB26 /* ZJPersonalCouponsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalCouponsListVC.swift; sourceTree = "<group>"; };
 		D6842A6C2B21C99C0032DB26 /* ZJPersonalCouponsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalCouponsVM.swift; sourceTree = "<group>"; };
@@ -7477,6 +7493,12 @@
 				D60EE5982B29AA2D00B9A885 /* IndicatorCustomizeVC.swift */,
 				D676C7BC2B2A9CAC00C4B295 /* CellCustomizeVC.swift */,
 				D676C7BE2B2A9CBF00C4B295 /* SpecialCustomizeVC.swift */,
+				D676C7CC2B2ADB9200C4B295 /* ContentBaseViewController.swift */,
+				D676C7CE2B2ADFBE00C4B295 /* ListBaseViewController.swift */,
+				D676C7D22B2B26C900C4B295 /* SegmentedControlVC.swift */,
+				D67B1F7D2B2BF3C200D4E5FC /* NestViewController.swift */,
+				D67B1F7F2B2BF47300D4E5FC /* NestChildViewController.swift */,
+				D67B1F812B2C29B200D4E5FC /* LoadDataViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -7517,6 +7539,7 @@
 			isa = PBXGroup;
 			children = (
 				D676C7BA2B2A9B2900C4B295 /* SegmentedVM.swift */,
+				D676C7D02B2B0AD700C4B295 /* JXSegmentedMixcellDataSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -7525,6 +7548,7 @@
 			isa = PBXGroup;
 			children = (
 				D676C7C12B2AA66500C4B295 /* SegmentedCell.swift */,
+				D676C7CA2B2AB20B00C4B295 /* CustomizeCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -11318,8 +11342,10 @@
 				46EB2E0000D320 /* BaseVC.swift in Sources */,
 				D676C7C92B2AAC0700C4B295 /* JXPagingVC.swift in Sources */,
 				D676C7C52B2AA8E600C4B295 /* TestModel.swift in Sources */,
+				D676C7CF2B2ADFBE00C4B295 /* ListBaseViewController.swift in Sources */,
 				D676C7BB2B2A9B2900C4B295 /* SegmentedVM.swift in Sources */,
 				46EB2E0000D340 /* BaseView.swift in Sources */,
+				D676C7CD2B2ADB9200C4B295 /* ContentBaseViewController.swift in Sources */,
 				46EB2E0000D2C0 /* Bundle+Extension.swift in Sources */,
 				D6842A762B21E8540032DB26 /* ZJPersonalCouponCell.swift in Sources */,
 				46EB2E0000D350 /* CommonProgressView.swift in Sources */,
@@ -11331,6 +11357,7 @@
 				46EB2E0000D280 /* SettingCommonCell.swift in Sources */,
 				D60EE5962B29A11500B9A885 /* SegmentedVC.swift in Sources */,
 				D6842A6D2B21C99C0032DB26 /* ZJPersonalCouponsVM.swift in Sources */,
+				D676C7D12B2B0AD700C4B295 /* JXSegmentedMixcellDataSource.swift in Sources */,
 				D676C7BF2B2A9CBF00C4B295 /* SpecialCustomizeVC.swift in Sources */,
 				D60EE5992B29AA2D00B9A885 /* IndicatorCustomizeVC.swift in Sources */,
 				46EB2E0000D290 /* SettingLangugeCell.swift in Sources */,
@@ -11345,6 +11372,7 @@
 				46EB2E0000D310 /* UITabBarItem+Badge.swift in Sources */,
 				46EB2E0000D180 /* UserMembershipLevel.swift in Sources */,
 				46EB2E0000D1B0 /* ZJMembershipInfoView.swift in Sources */,
+				D67B1F802B2BF47300D4E5FC /* NestChildViewController.swift in Sources */,
 				D60EE59B2B29AA8D00B9A885 /* BaseListVC.swift in Sources */,
 				D6F752B92B2878D400330D33 /* ZJNoSignalView.swift in Sources */,
 				46EB2E0000D440 /* ZJPersonal-dummy.m in Sources */,
@@ -11359,9 +11387,11 @@
 				D6842A692B21C8B80032DB26 /* ZJPersonalCouponsListVC.swift in Sources */,
 				D6F752B72B28609A00330D33 /* Date+Extension.swift in Sources */,
 				D60EE5922B295D2A00B9A885 /* TestCell.swift in Sources */,
+				D676C7D32B2B26C900C4B295 /* SegmentedControlVC.swift in Sources */,
 				46EB2E0000D250 /* ZJPersonalMessageVC.swift in Sources */,
 				46EB2E0000D3B0 /* ZJPersonalModule.swift in Sources */,
 				46EB2E0000D200 /* ZJPersonalScrollView.swift in Sources */,
+				D676C7CB2B2AB20B00C4B295 /* CustomizeCell.swift in Sources */,
 				D6F752B32B28099A00330D33 /* NoMoreDataCell.swift in Sources */,
 				D676C7BD2B2A9CAC00C4B295 /* CellCustomizeVC.swift in Sources */,
 				D676C7B82B2A9AF100C4B295 /* SegmentedModel.swift in Sources */,
@@ -11376,9 +11406,11 @@
 				46EB2E0000D160 /* ZJPersonalVC+event.swift in Sources */,
 				D6842A722B21CE0D0032DB26 /* ZJSegmentedView.swift in Sources */,
 				46EB2E0000D240 /* ZJPersonalVM.swift in Sources */,
+				D67B1F7E2B2BF3C200D4E5FC /* NestViewController.swift in Sources */,
 				46EB2E0000D2B0 /* TestVC.swift in Sources */,
 				D65A12982B20775700A826DC /* UpdateInfoModel.swift in Sources */,
 				D6842A742B21E5DB0032DB26 /* ZJPersonalCouponsBaseListVC.swift in Sources */,
+				D67B1F822B2C29B200D4E5FC /* LoadDataViewController.swift in Sources */,
 				46EB2E0000D230 /* ZJUnreadMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

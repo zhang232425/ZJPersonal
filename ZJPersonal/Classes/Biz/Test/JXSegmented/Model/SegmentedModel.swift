@@ -36,3 +36,4 @@ enum SegmentedRow: CaseIterable {
     }
     
 }
+
