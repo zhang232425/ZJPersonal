@@ -1401,6 +1401,10 @@
 		D67B1F7E2B2BF3C200D4E5FC /* NestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F7D2B2BF3C200D4E5FC /* NestViewController.swift */; };
 		D67B1F802B2BF47300D4E5FC /* NestChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F7F2B2BF47300D4E5FC /* NestChildViewController.swift */; };
 		D67B1F822B2C29B200D4E5FC /* LoadDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F812B2C29B200D4E5FC /* LoadDataViewController.swift */; };
+		D67B1F842B2C372000D4E5FC /* ZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F832B2C372000D4E5FC /* ZoomViewController.swift */; };
+		D67B1F862B2C428A00D4E5FC /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F852B2C428A00D4E5FC /* ListViewController.swift */; };
+		D67B1F892B2C519700D4E5FC /* ZoomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F882B2C519700D4E5FC /* ZoomHeaderView.swift */; };
+		D67B1F8B2B2C5DDD00D4E5FC /* RefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67B1F8A2B2C5DDD00D4E5FC /* RefreshViewController.swift */; };
 		D6842A672B21C6C30032DB26 /* ZJPersonalCouponsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6842A662B21C6C30032DB26 /* ZJPersonalCouponsVC.swift */; };
 		D6842A692B21C8B80032DB26 /* ZJPersonalCouponsListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6842A682B21C8B80032DB26 /* ZJPersonalCouponsListVC.swift */; };
 		D6842A6D2B21C99C0032DB26 /* ZJPersonalCouponsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6842A6C2B21C99C0032DB26 /* ZJPersonalCouponsVM.swift */; };
@@ -1408,6 +1412,13 @@
 		D6842A722B21CE0D0032DB26 /* ZJSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6842A712B21CE0D0032DB26 /* ZJSegmentedView.swift */; };
 		D6842A742B21E5DB0032DB26 /* ZJPersonalCouponsBaseListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6842A732B21E5DB0032DB26 /* ZJPersonalCouponsBaseListVC.swift */; };
 		D6842A762B21E8540032DB26 /* ZJPersonalCouponCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6842A752B21E8540032DB26 /* ZJPersonalCouponCell.swift */; };
+		D6B262CC2B301D8A00206AD8 /* ListRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B262CB2B301D8A00206AD8 /* ListRefreshViewController.swift */; };
+		D6B262CE2B30371600206AD8 /* NaviHiddenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B262CD2B30371600206AD8 /* NaviHiddenViewController.swift */; };
+		D6B262D02B30680300206AD8 /* PagingNestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B262CF2B30680300206AD8 /* PagingNestViewController.swift */; };
+		D6B262D22B30685200206AD8 /* HeightChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B262D12B30685200206AD8 /* HeightChangeViewController.swift */; };
+		D6B262D42B30685F00206AD8 /* HeightChangeAnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B262D32B30685F00206AD8 /* HeightChangeAnimationViewController.swift */; };
+		D6B262D62B30686D00206AD8 /* HeaderPositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B262D52B30686D00206AD8 /* HeaderPositionViewController.swift */; };
+		D6B262D82B30687900206AD8 /* SmoothViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B262D72B30687900206AD8 /* SmoothViewController.swift */; };
 		D6F752B12B28088700330D33 /* ZJPersonalCouponEmptyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F752B02B28088700330D33 /* ZJPersonalCouponEmptyCell.swift */; };
 		D6F752B32B28099A00330D33 /* NoMoreDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F752B22B28099A00330D33 /* NoMoreDataCell.swift */; };
 		D6F752B52B28356800330D33 /* BadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F752B42B28356800330D33 /* BadgeLabel.swift */; };
@@ -4136,6 +4147,10 @@
 		D67B1F7D2B2BF3C200D4E5FC /* NestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestViewController.swift; sourceTree = "<group>"; };
 		D67B1F7F2B2BF47300D4E5FC /* NestChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestChildViewController.swift; sourceTree = "<group>"; };
 		D67B1F812B2C29B200D4E5FC /* LoadDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadDataViewController.swift; sourceTree = "<group>"; };
+		D67B1F832B2C372000D4E5FC /* ZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomViewController.swift; sourceTree = "<group>"; };
+		D67B1F852B2C428A00D4E5FC /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D67B1F882B2C519700D4E5FC /* ZoomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomHeaderView.swift; sourceTree = "<group>"; };
+		D67B1F8A2B2C5DDD00D4E5FC /* RefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshViewController.swift; sourceTree = "<group>"; };
 		D6842A662B21C6C30032DB26 /* ZJPersonalCouponsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalCouponsVC.swift; sourceTree = "<group>"; };
 		D6842A682B21C8B80032DB26 /* ZJPersonalCouponsListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalCouponsListVC.swift; sourceTree = "<group>"; };
 		D6842A6C2B21C99C0032DB26 /* ZJPersonalCouponsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalCouponsVM.swift; sourceTree = "<group>"; };
@@ -4143,6 +4158,13 @@
 		D6842A712B21CE0D0032DB26 /* ZJSegmentedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJSegmentedView.swift; sourceTree = "<group>"; };
 		D6842A732B21E5DB0032DB26 /* ZJPersonalCouponsBaseListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalCouponsBaseListVC.swift; sourceTree = "<group>"; };
 		D6842A752B21E8540032DB26 /* ZJPersonalCouponCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalCouponCell.swift; sourceTree = "<group>"; };
+		D6B262CB2B301D8A00206AD8 /* ListRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRefreshViewController.swift; sourceTree = "<group>"; };
+		D6B262CD2B30371600206AD8 /* NaviHiddenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaviHiddenViewController.swift; sourceTree = "<group>"; };
+		D6B262CF2B30680300206AD8 /* PagingNestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingNestViewController.swift; sourceTree = "<group>"; };
+		D6B262D12B30685200206AD8 /* HeightChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightChangeViewController.swift; sourceTree = "<group>"; };
+		D6B262D32B30685F00206AD8 /* HeightChangeAnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightChangeAnimationViewController.swift; sourceTree = "<group>"; };
+		D6B262D52B30686D00206AD8 /* HeaderPositionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderPositionViewController.swift; sourceTree = "<group>"; };
+		D6B262D72B30687900206AD8 /* SmoothViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothViewController.swift; sourceTree = "<group>"; };
 		D6F752B02B28088700330D33 /* ZJPersonalCouponEmptyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalCouponEmptyCell.swift; sourceTree = "<group>"; };
 		D6F752B22B28099A00330D33 /* NoMoreDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoMoreDataCell.swift; sourceTree = "<group>"; };
 		D6F752B42B28356800330D33 /* BadgeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeLabel.swift; sourceTree = "<group>"; };
@@ -7564,6 +7586,7 @@
 		D676C7C62B2AABD900C4B295 /* JXPaging */ = {
 			isa = PBXGroup;
 			children = (
+				D67B1F872B2C517500D4E5FC /* View */,
 				D676C7C72B2AABE200C4B295 /* Controller */,
 			);
 			path = JXPaging;
@@ -7573,8 +7596,26 @@
 			isa = PBXGroup;
 			children = (
 				D676C7C82B2AAC0700C4B295 /* JXPagingVC.swift */,
+				D67B1F832B2C372000D4E5FC /* ZoomViewController.swift */,
+				D67B1F8A2B2C5DDD00D4E5FC /* RefreshViewController.swift */,
+				D6B262CB2B301D8A00206AD8 /* ListRefreshViewController.swift */,
+				D6B262CD2B30371600206AD8 /* NaviHiddenViewController.swift */,
+				D6B262CF2B30680300206AD8 /* PagingNestViewController.swift */,
+				D6B262D12B30685200206AD8 /* HeightChangeViewController.swift */,
+				D6B262D32B30685F00206AD8 /* HeightChangeAnimationViewController.swift */,
+				D6B262D52B30686D00206AD8 /* HeaderPositionViewController.swift */,
+				D6B262D72B30687900206AD8 /* SmoothViewController.swift */,
+				D67B1F852B2C428A00D4E5FC /* ListViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		D67B1F872B2C517500D4E5FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D67B1F882B2C519700D4E5FC /* ZoomHeaderView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		D6842A642B21C68F0032DB26 /* Coupon */ = {
@@ -11340,11 +11381,14 @@
 				46EB2E0000D380 /* API.swift in Sources */,
 				46EB2E0000D330 /* BaseListCell.swift in Sources */,
 				46EB2E0000D320 /* BaseVC.swift in Sources */,
+				D67B1F842B2C372000D4E5FC /* ZoomViewController.swift in Sources */,
 				D676C7C92B2AAC0700C4B295 /* JXPagingVC.swift in Sources */,
 				D676C7C52B2AA8E600C4B295 /* TestModel.swift in Sources */,
 				D676C7CF2B2ADFBE00C4B295 /* ListBaseViewController.swift in Sources */,
 				D676C7BB2B2A9B2900C4B295 /* SegmentedVM.swift in Sources */,
+				D6B262D02B30680300206AD8 /* PagingNestViewController.swift in Sources */,
 				46EB2E0000D340 /* BaseView.swift in Sources */,
+				D6B262CE2B30371600206AD8 /* NaviHiddenViewController.swift in Sources */,
 				D676C7CD2B2ADB9200C4B295 /* ContentBaseViewController.swift in Sources */,
 				46EB2E0000D2C0 /* Bundle+Extension.swift in Sources */,
 				D6842A762B21E8540032DB26 /* ZJPersonalCouponCell.swift in Sources */,
@@ -11363,10 +11407,12 @@
 				46EB2E0000D290 /* SettingLangugeCell.swift in Sources */,
 				D6842A702B21CB9F0032DB26 /* CouponModel.swift in Sources */,
 				46EB2E0000D2A0 /* SettingLogoutCell.swift in Sources */,
+				D67B1F862B2C428A00D4E5FC /* ListViewController.swift in Sources */,
 				46EB2E0000D2D0 /* UIImage+Extension.swift in Sources */,
 				46EB2E0000D2E0 /* UIImageView+Extension.swift in Sources */,
 				46EB2E0000D2F0 /* UIResponder+Extension.swift in Sources */,
 				D6F752B12B28088700330D33 /* ZJPersonalCouponEmptyCell.swift in Sources */,
+				D67B1F8B2B2C5DDD00D4E5FC /* RefreshViewController.swift in Sources */,
 				46EB2E0000D300 /* UIScrollView+Extension.swift in Sources */,
 				D65A12962B20766000A826DC /* ZJPersonalSettingVM.swift in Sources */,
 				46EB2E0000D310 /* UITabBarItem+Badge.swift in Sources */,
@@ -11376,7 +11422,9 @@
 				D60EE59B2B29AA8D00B9A885 /* BaseListVC.swift in Sources */,
 				D6F752B92B2878D400330D33 /* ZJNoSignalView.swift in Sources */,
 				46EB2E0000D440 /* ZJPersonal-dummy.m in Sources */,
+				D6B262D82B30687900206AD8 /* SmoothViewController.swift in Sources */,
 				D6F752B52B28356800330D33 /* BadgeLabel.swift in Sources */,
+				D67B1F892B2C519700D4E5FC /* ZoomHeaderView.swift in Sources */,
 				D676C7C22B2AA66500C4B295 /* SegmentedCell.swift in Sources */,
 				46EB2E0000D190 /* ZJPersonalClickEvent.swift in Sources */,
 				46EB2E0000D1C0 /* ZJPersonalLoginOnView.swift in Sources */,
@@ -11385,13 +11433,16 @@
 				46EB2E0000D1E0 /* ZJPersonalMenuView.swift in Sources */,
 				D65A12922B2064DB00A826DC /* SandboxCacheUtil.swift in Sources */,
 				D6842A692B21C8B80032DB26 /* ZJPersonalCouponsListVC.swift in Sources */,
+				D6B262CC2B301D8A00206AD8 /* ListRefreshViewController.swift in Sources */,
 				D6F752B72B28609A00330D33 /* Date+Extension.swift in Sources */,
 				D60EE5922B295D2A00B9A885 /* TestCell.swift in Sources */,
 				D676C7D32B2B26C900C4B295 /* SegmentedControlVC.swift in Sources */,
 				46EB2E0000D250 /* ZJPersonalMessageVC.swift in Sources */,
 				46EB2E0000D3B0 /* ZJPersonalModule.swift in Sources */,
 				46EB2E0000D200 /* ZJPersonalScrollView.swift in Sources */,
+				D6B262D62B30686D00206AD8 /* HeaderPositionViewController.swift in Sources */,
 				D676C7CB2B2AB20B00C4B295 /* CustomizeCell.swift in Sources */,
+				D6B262D42B30685F00206AD8 /* HeightChangeAnimationViewController.swift in Sources */,
 				D6F752B32B28099A00330D33 /* NoMoreDataCell.swift in Sources */,
 				D676C7BD2B2A9CAC00C4B295 /* CellCustomizeVC.swift in Sources */,
 				D676C7B82B2A9AF100C4B295 /* SegmentedModel.swift in Sources */,
@@ -11407,6 +11458,7 @@
 				D6842A722B21CE0D0032DB26 /* ZJSegmentedView.swift in Sources */,
 				46EB2E0000D240 /* ZJPersonalVM.swift in Sources */,
 				D67B1F7E2B2BF3C200D4E5FC /* NestViewController.swift in Sources */,
+				D6B262D22B30685200206AD8 /* HeightChangeViewController.swift in Sources */,
 				46EB2E0000D2B0 /* TestVC.swift in Sources */,
 				D65A12982B20775700A826DC /* UpdateInfoModel.swift in Sources */,
 				D6842A742B21E5DB0032DB26 /* ZJPersonalCouponsBaseListVC.swift in Sources */,
