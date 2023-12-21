@@ -5,9 +5,6 @@
 //  Created by Jercan on 2023/12/14.
 //
 
-// http://imangodoc.com/0d77eea1.html
-// https://juejin.cn/post/7285290243297689652
-
 import UIKit
 import RxCocoa
 import RxSwift

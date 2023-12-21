@@ -1386,6 +1386,7 @@
 		D65A12962B20766000A826DC /* ZJPersonalSettingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A12952B20766000A826DC /* ZJPersonalSettingVM.swift */; };
 		D65A12982B20775700A826DC /* UpdateInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A12972B20775700A826DC /* UpdateInfoModel.swift */; };
 		D65A129A2B20831900A826DC /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65A12992B20831900A826DC /* UserDefaults+Extension.swift */; };
+		D65C9F882B319A7E006C69E5 /* POPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65C9F872B319A7E006C69E5 /* POPViewController.swift */; };
 		D676C7B82B2A9AF100C4B295 /* SegmentedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7B72B2A9AF100C4B295 /* SegmentedModel.swift */; };
 		D676C7BB2B2A9B2900C4B295 /* SegmentedVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7BA2B2A9B2900C4B295 /* SegmentedVM.swift */; };
 		D676C7BD2B2A9CAC00C4B295 /* CellCustomizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D676C7BC2B2A9CAC00C4B295 /* CellCustomizeVC.swift */; };
@@ -1424,6 +1425,8 @@
 		D6F752B52B28356800330D33 /* BadgeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F752B42B28356800330D33 /* BadgeLabel.swift */; };
 		D6F752B72B28609A00330D33 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F752B62B28609A00330D33 /* Date+Extension.swift */; };
 		D6F752B92B2878D400330D33 /* ZJNoSignalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F752B82B2878D300330D33 /* ZJNoSignalView.swift */; };
+		D6F99B6A2B32D990005000B1 /* FPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B692B32D990005000B1 /* FPViewController.swift */; };
+		D6F99B6C2B32E0E6005000B1 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B6B2B32E0E6005000B1 /* String+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -4132,6 +4135,7 @@
 		D65A12952B20766000A826DC /* ZJPersonalSettingVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJPersonalSettingVM.swift; sourceTree = "<group>"; };
 		D65A12972B20775700A826DC /* UpdateInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateInfoModel.swift; sourceTree = "<group>"; };
 		D65A12992B20831900A826DC /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		D65C9F872B319A7E006C69E5 /* POPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POPViewController.swift; sourceTree = "<group>"; };
 		D676C7B72B2A9AF100C4B295 /* SegmentedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedModel.swift; sourceTree = "<group>"; };
 		D676C7BA2B2A9B2900C4B295 /* SegmentedVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedVM.swift; sourceTree = "<group>"; };
 		D676C7BC2B2A9CAC00C4B295 /* CellCustomizeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellCustomizeVC.swift; sourceTree = "<group>"; };
@@ -4170,6 +4174,8 @@
 		D6F752B42B28356800330D33 /* BadgeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeLabel.swift; sourceTree = "<group>"; };
 		D6F752B62B28609A00330D33 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		D6F752B82B2878D300330D33 /* ZJNoSignalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZJNoSignalView.swift; sourceTree = "<group>"; };
+		D6F99B692B32D990005000B1 /* FPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPViewController.swift; sourceTree = "<group>"; };
+		D6F99B6B2B32E0E6005000B1 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		E1E2DF501B9FFA6FE2FBC9A855B763B1 /* ZJPersonal-ZJPersonal */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "ZJPersonal-ZJPersonal"; path = ZJPersonal.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7C5BC805E4D0610414D6D3C234F2DDB /* ZJRequest */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZJRequest; path = ZJRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -6570,6 +6576,8 @@
 		46EB2E00004D60 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				D6F99B672B32D955005000B1 /* FP */,
+				D65C9F852B3199FA006C69E5 /* POP */,
 				D676C7C62B2AABD900C4B295 /* JXPaging */,
 				D60EE5942B299E9700B9A885 /* JXSegmented */,
 				D60EE5932B2994BF00B9A885 /* Test */,
@@ -6596,6 +6604,7 @@
 				46EB2E00004DF0 /* UITabBarItem+Badge.swift */,
 				D65A12992B20831900A826DC /* UserDefaults+Extension.swift */,
 				D6F752B62B28609A00330D33 /* Date+Extension.swift */,
+				D6F99B6B2B32E0E6005000B1 /* String+Extension.swift */,
 			);
 			name = Extension;
 			path = ZJPersonal/Classes/Extension;
@@ -7549,6 +7558,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D65C9F852B3199FA006C69E5 /* POP */ = {
+			isa = PBXGroup;
+			children = (
+				D65C9F862B319A47006C69E5 /* Controller */,
+			);
+			path = POP;
+			sourceTree = "<group>";
+		};
+		D65C9F862B319A47006C69E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D65C9F872B319A7E006C69E5 /* POPViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D676C7B62B2A9ABF00C4B295 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -7662,6 +7687,22 @@
 				D6842A6F2B21CB9F0032DB26 /* CouponModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D6F99B672B32D955005000B1 /* FP */ = {
+			isa = PBXGroup;
+			children = (
+				D6F99B682B32D967005000B1 /* Controller */,
+			);
+			path = FP;
+			sourceTree = "<group>";
+		};
+		D6F99B682B32D967005000B1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D6F99B692B32D990005000B1 /* FPViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -11383,6 +11424,7 @@
 				46EB2E0000D320 /* BaseVC.swift in Sources */,
 				D67B1F842B2C372000D4E5FC /* ZoomViewController.swift in Sources */,
 				D676C7C92B2AAC0700C4B295 /* JXPagingVC.swift in Sources */,
+				D6F99B6C2B32E0E6005000B1 /* String+Extension.swift in Sources */,
 				D676C7C52B2AA8E600C4B295 /* TestModel.swift in Sources */,
 				D676C7CF2B2ADFBE00C4B295 /* ListBaseViewController.swift in Sources */,
 				D676C7BB2B2A9B2900C4B295 /* SegmentedVM.swift in Sources */,
@@ -11392,6 +11434,7 @@
 				D676C7CD2B2ADB9200C4B295 /* ContentBaseViewController.swift in Sources */,
 				46EB2E0000D2C0 /* Bundle+Extension.swift in Sources */,
 				D6842A762B21E8540032DB26 /* ZJPersonalCouponCell.swift in Sources */,
+				D6F99B6A2B32D990005000B1 /* FPViewController.swift in Sources */,
 				46EB2E0000D350 /* CommonProgressView.swift in Sources */,
 				46EB2E0000D390 /* Locale.swift in Sources */,
 				46EB2E0000D370 /* Namespace.swift in Sources */,
@@ -11456,6 +11499,7 @@
 				46EB2E0000D170 /* ZJPersonalVC.swift in Sources */,
 				46EB2E0000D160 /* ZJPersonalVC+event.swift in Sources */,
 				D6842A722B21CE0D0032DB26 /* ZJSegmentedView.swift in Sources */,
+				D65C9F882B319A7E006C69E5 /* POPViewController.swift in Sources */,
 				46EB2E0000D240 /* ZJPersonalVM.swift in Sources */,
 				D67B1F7E2B2BF3C200D4E5FC /* NestViewController.swift in Sources */,
 				D6B262D22B30685200206AD8 /* HeightChangeViewController.swift in Sources */,
